@@ -1,38 +1,125 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  background: linear-gradient(90deg, #41a474, #6495f2);
+  height: 100vh;
+  width: 100%;
+  background-image: url('https://img.freepik.com/free-vector/colorful-palm-silhouettes-background_23-2148541792.jpg?w=2000');
+}
+
+#containerDiv {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+}
+
+#containerList {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  margin: auto;
+  background: white;
+  border-radius: 1rem 1rem 0 0;
+}
+
+#containerList>li {
+  list-style: none;
+  margin-left: 0.7rem;
+  padding: 2rem;
+  font-size: 1.7rem;
+}
+
+#containerList>li>a {
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem;
+}
+
+.isactive {
+  border-bottom: 0.2rem solid black;
+}
+
+#signUpDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  background: white;
+  border-radius: 0 0 2rem 2rem;
+  
+}
+
+#signUpDiv>input {
+  width: 55%;
+  height: 2rem;
+  margin-bottom: 1rem;
+  border: 2px solid gray;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#genderDiv {
+  font-size: 1.4rem;
+  margin: auto;
+  padding: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#genderDiv>input {
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+#signUpDiv>button {
+  width: 8rem;
+  height: 1.8rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  background: rgb(205, 173, 45);
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+width: 55%;
+
+}
+
+#signUpDiv>button:hover{
+width: 9rem;
+height: 2.5rem;
+cursor: pointer;
+border: 1px solid gray;
+width: 55%;
+
+}
+
+label{
+  margin-bottom: 0.3rem;
+}
+
+#footerUl{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  list-style: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+#footerUl>li{
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+  padding: 0.5rem;
+  border: 1px solid rgb(179, 173, 173);
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#errorsDiv{
+  margin-bottom: 0.5rem;
+  color: red;
 }
